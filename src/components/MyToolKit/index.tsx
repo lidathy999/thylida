@@ -9,18 +9,7 @@ function MyToolKit() {
           <h2 className="text-3xl font-bold text-primary-500 mb-6">
             My Toolkit 🌸
           </h2>
-          <div className="mb-6 text-lg">
-            Hello again! Thanks for scrolling this far! 🤗 Just a heads up, my
-            portfolio is a little outdated at the moment. I haven’t had time to
-            update it, but I’m keeping it up for now, and I hope it gives you
-            some inspiration!
-          </div>
-          <div className="text-lg">
-            Other than coding, I spend most of my free time playing Animal
-            Crossing (add me!) or any other video games. 🤓 I've also been
-            trying to read more so feel free to reach out to me with any book
-            recommendations!
-          </div>
+          <div></div>
         </div>
 
         <img

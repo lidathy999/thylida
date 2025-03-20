@@ -1,10 +1,60 @@
-import { Button } from "@mui/material";
+import {
+  Button,
+  FormControl,
+  FormHelperText,
+  FormLabel,
+  Input,
+  TextareaAutosize,
+  TextField,
+} from "@mui/material";
 import "../../App.css";
 
 function ContactMe() {
   return (
-    <div className="App min-h-screen overflow-scroll h-screen bg-amber-50">
-      About me
+    <div className="pt-8">
+      <h2 className="text-3xl font-bold text-primary-500 mb-6 text-left">
+        Let's Connect! 💌
+      </h2>
+      <div className="grid grid-cols-2">
+        <div>
+          If you ever want to grab a coffee/bubble tea (virtually) or just want
+          a quick chat - you can find me on social media or you can send me a
+          message here!
+        </div>
+        <div>
+          <form className="grid gap-4">
+            <FormControl id="name" fullWidth required color="primary">
+              <TextField
+                id="outlined-basic"
+                label="Name"
+                variant="outlined"
+                placeholder="Name"
+                name="name"
+              />
+            </FormControl>
+            <FormControl id="Id" fullWidth required color="primary">
+              <TextField
+                id="outlined-basic"
+                label="Email"
+                variant="outlined"
+                placeholder="Email"
+                name="email"
+              />
+            </FormControl>
+            <FormControl id="Id" fullWidth required color="primary">
+              <TextareaAutosize
+                maxRows={4}
+                minRows={4}
+                aria-label="maximum height"
+                placeholder="Message"
+              />
+            </FormControl>
+            <Button color="primary" variant="outlined" type="submit">
+              Submit
+            </Button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ function App() {
   const menus = ["Home", "About", "Resume", "Portfolio", "Services", "Contact"];
   return (
     <div className="App bg-amber-50">
-      <div className="w-[80%] justify-center mx-auto">
+      <div className="w-[80%] pb-10 justify-center mx-auto">
         <div className="flex min-h-screen overflow-scroll mb-6 h-screen justify-between flex-col h-[100%]">
           <div className="flex flex-row gap-2 justify-end pr-5 pt-3">
             {menus.map((menu) => (
