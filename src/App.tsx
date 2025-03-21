@@ -5,16 +5,38 @@ import ProjectList from "./components/ProjectList";
 import ContactMe from "./components/ContactMe";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 
+type RowType = {
+  label: string;
+  id: string;
+};
 function App() {
-  const menus = ["Home", "About", "Resume", "Portfolio", "Services", "Contact"];
+  const menus = [
+    { label: "Home", id: "home" },
+    { label: "About", id: "aboutMe" },
+    { label: "Resume", id: "resume" },
+    { label: "Projects", id: "projects" },
+    { label: "Contact", id: "contactMe" },
+  ];
+
+  const handleClickMenu = (row: RowType) => {
+    const element = document.getElementById(row.id) as any;
+    element.scrollIntoView({ block: "start", behavior: "smooth" });
+  };
+
   return (
-    <div className="App bg-amber-50">
+    <div className="App bg-amber-50" id="home">
       <div className="w-[80%] pb-10 justify-center mx-auto">
         <div className="flex min-h-screen overflow-scroll mb-6 h-screen justify-between flex-col h-[100%]">
           <div className="flex flex-row gap-2 justify-end pr-5 pt-3">
             {menus.map((menu) => (
-              <Button variant="outlined" color="warning" className="p-2">
-                {menu}
+              <Button
+                key={menu.id}
+                onClick={() => handleClickMenu(menu)}
+                variant="outlined"
+                color="warning"
+                className="p-2"
+              >
+                {menu?.label}
               </Button>
             ))}
           </div>

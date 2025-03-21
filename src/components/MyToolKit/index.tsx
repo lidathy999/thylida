@@ -3,7 +3,7 @@ import "../../App.css";
 
 function MyToolKit() {
   return (
-    <div className=" bg-amber-50 pt-8">
+    <div className=" bg-amber-50 pt-8" id="myToolkit">
       <div className="flex gap-5 ">
         <div className="text-justify">
           <h2 className="text-3xl font-bold text-primary-500 mb-6">
