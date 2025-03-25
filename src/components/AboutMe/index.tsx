@@ -1,15 +1,14 @@
-import { Button } from "@mui/material";
 import "../../App.css";
 
 function AboutMe() {
   return (
-    <div className=" bg-amber-50 pt-8" id="aboutMe">
+    <div className=" bg-amber-50 global-padding-t" id="aboutMe">
       <div className="flex gap-5 ">
         <div className="text-justify">
-          <h2 className="text-3xl font-bold text-primary-500 mb-6">
+          <h2 className="text-3xl font-bold text-primary-500 global-padding-b">
             About Me 🌸
           </h2>
-          <div className="mb-6 text-lg">
+          <div className="global-padding-b text-lg">
             Hello again! Thanks for scrolling this far! 🤗 Just a heads up, my
             portfolio is a little outdated at the moment. I haven’t had time to
             update it, but I’m keeping it up for now, and I hope it gives you

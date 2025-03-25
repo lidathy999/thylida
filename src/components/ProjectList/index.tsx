@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import "../../App.css";
 
 type ProjectTypes = string[];
@@ -6,10 +5,12 @@ type ProjectTypes = string[];
 function ProjectList() {
   const projects = ["RokKru", "Todo List", "Portfolio", "API"] as ProjectTypes;
   return (
-    <div className="pt-8" id="projects">
-      <h2 className="text-3xl text-left font-bold text-primary-500 mb-6">
-        My Projects 🌸
-      </h2>
+    <div className="global-padding-t" id="projects">
+      <div className="">
+        <h2 className="text-3xl text-left font-bold text-primary-500 global-padding-b">
+          A collection of projects I've worked on 🌸
+        </h2>
+      </div>
       <div className="grid grid-cols-2 gap-8">
         {projects.map((project: string) => (
           <div

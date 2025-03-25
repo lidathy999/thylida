@@ -8,7 +8,32 @@ module.exports = {
       colors: {
         primary: colors.amber,
       },
+      padding: {
+        DEFAULT: "2rem",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const globalPadding = {
+        ".global-padding": {
+          padding: "2rem",
+        },
+
+        ".global-padding-y": {
+          "padding-left": "2rem",
+          "padding-right": "2rem",
+        },
+
+        ".global-padding-t": {
+          "padding-top": "2rem",
+        },
+
+        ".global-padding-b": {
+          "padding-bottom": "2rem",
+        },
+      };
+      addUtilities(globalPadding, ["responsive"]); // Enables breakpoints
+    },
+  ],
 };
