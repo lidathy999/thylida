@@ -4,6 +4,7 @@ type ProjectTypes = {
   name: string;
   cover: string;
   gitlab_url: string;
+  className?: string;
 };
 
 function ProjectList() {
@@ -30,13 +31,15 @@ function ProjectList() {
     },
     {
       name: "Camemis App",
-      cover: "../../images/camemis-app.webp",
+      cover: "../../images/camemis-app.png",
       gitlab_url: "",
+      className: "bg-sky-100",
     },
     {
       name: "Camemis Library",
       cover: "../../images/camemis-e-library.webp",
       gitlab_url: "",
+      className: "bg-sky-100",
     },
     {
       name: "UNT Wholesale",
@@ -70,7 +73,7 @@ function ProjectList() {
         <div className="grid grid-cols-2 gap-6">
           {projects.map((project: ProjectTypes) => (
             <div
-              className="h-[300px] bg-primary-100 rounded-md shadow-md relative"
+              className={`h-[300px] bg-white rounded-md shadow-md relative ${project.className}`}
               key={project.name}
             >
               {project.cover && (
@@ -80,7 +83,7 @@ function ProjectList() {
                   className="absolute z-10 bottom-0 top-0 left-0 right-0 m-auto object-cover h-full inset-shadow-2xs p-1"
                 />
               )}
-              <div className="absolute z-20 bottom-0 h-full">
+              <div className=" none hover:block z-20 bottom-0 h-full">
                 {project.name}
               </div>
             </div>
