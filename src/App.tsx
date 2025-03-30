@@ -50,28 +50,53 @@ function App() {
                 />
               </div>
               <div>
-                <h1 className="text-3xl font-bold">Hello, I'm Lyda!</h1>
+                <h1 className="text-4xl font-bold">Hello, I'm Lyda!</h1>
                 <p className="text-xl">
                   I'm a{" "}
-                  <span className="text-primary-500">Front-end Developer</span>
+                  <span className="text-primary-500 text-2xl">
+                    Front-end Developer
+                  </span>
                 </p>
               </div>
             </div>
-            <div className="text-center text-lg leading-8 shadow-drop-center fade-in">
-              Detail-oriented Front-End Developer with more than 5 years
-              experience working with HTML, CSS, Javascript, JQuery, and
-              TypeScript. Highly adept at both independent and collaborative
-              projects, with an emphasis on landing page and website
-              development.
+            <div className="text-center text-lg leading-8 shadow-drop-center fade-in w-1/2">
+              A highly experienced Front-End Web Developer with over 6 years of
+              expertise in creating responsive, user-friendly websites with
+              optimized performance and cross-browser compatibility. Skilled in
+              UI design with responsive, testing, and debugging, I excel both
+              independently and in team collaborations. I love to challenge and
+              drive innovation.
             </div>
           </div>
-          <div className="mb-5">
+          <div className="mb-2">
             <KeyboardDoubleArrowDownIcon className="text-primary-500 animate-bounce justify-center" />
           </div>
         </div>
-        <AboutMe />
-        <ProjectList />
-        <ContactMe />
+      </div>
+      {/* <AboutMe /> */}
+
+      <ProjectList />
+      <ContactMe />
+      <div className="bg-primary-500 mt-8 h-[100px] p-4 text-center">
+        <span>Power By LYDA THY@2025</span>
+        <div className="flex gap-3 mt-2 justify-center">
+          <a href="https://gitlab.com/Thylida">
+            <img
+              width={30}
+              height={30}
+              src="../../images/gitlab.png"
+              alt="gitlab"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/lyda-thy-475381229">
+            <img
+              width={30}
+              height={30}
+              src="../../images/linkedin.png"
+              alt="linkedIn"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

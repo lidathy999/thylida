@@ -8,7 +8,10 @@ import "../../App.css";
 
 function ContactMe() {
   return (
-    <div className="global-padding-t" id="contactMe">
+    <div
+      className="w-[80%] mx-auto bg-primary-50 shadow-md p-6 global-padding-t"
+      id="contactMe"
+    >
       <div className="grid grid-cols-2 gap-4">
         <div>
           <h2 className="text-3xl font-bold text-primary-500 global-padding-b text-left">
@@ -17,24 +20,6 @@ function ContactMe() {
           If you ever want to grab a coffee/bubble tea (virtually) or just want
           a quick chat - you can find me on social media or you can send me a
           message here!
-          <div className="flex gap-3 mt-6 justify-center">
-            <a href="https://gitlab.com/Thylida">
-              <img
-                width={30}
-                height={30}
-                src="../../images/gitlab.png"
-                alt="gitlab"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/lyda-thy-475381229">
-              <img
-                width={30}
-                height={30}
-                src="../../images/linkedin.png"
-                alt="linkedIn"
-              />
-            </a>
-          </div>
         </div>
         <div>
           <form className="grid gap-4">
