@@ -54,7 +54,7 @@ function ProjectList() {
   ];
   return (
     <div>
-      <div className="bg-primary-500 h-[400px]">
+      <div className="bg-primary-500 h-[400px]" id="projects">
         <div className="h-full flex flex-col py-8 items-center">
           <h2 className="text-3xl text-center font-bold text-white global-padding-b">
             A collection of projects I've worked on 🌸
@@ -66,10 +66,7 @@ function ProjectList() {
         </div>
       </div>
 
-      <div
-        className="mx-auto w-[80%] mt-[-150px] global-padding-t bg-primary-50 p-6 rounded-t-lg shadow-md"
-        id="projects"
-      >
+      <div className="mx-auto w-[80%] mt-[-200px] global-padding-t bg-primary-50 p-6 rounded-t-lg shadow-md">
         <div className="grid grid-cols-2 gap-6">
           {projects.map((project: ProjectTypes) => (
             <div
