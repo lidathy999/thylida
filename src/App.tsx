@@ -40,7 +40,6 @@ function App() {
               </Button>
             ))}
           </div>
-
           <div className="flex flex-col h-[100%] self-center justify-center items-center">
             <div className="flex flex-col items-center scale-up-center mb-8">
               <div className="w-[150px] h-[150px]">
